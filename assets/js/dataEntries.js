@@ -185,6 +185,7 @@ var modal3 = document.getElementById("myModal3");
 var modal4 = document.getElementById("myModal4");
 var modal5 = document.getElementById("myModal5");
 var modal6 = document.getElementById("myModal6");
+var modal7 = document.getElementById("myModal7");
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("myBtn1");
@@ -193,6 +194,7 @@ var btn3 = document.getElementById("myBtn3");
 var btn4 = document.getElementById("myBtn4");
 var btn5 = document.getElementById("myBtn5");
 var btn6 = document.getElementById("myBtn6");
+var btn7 = document.getElementById("myBtn7");
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("close1")[0];
@@ -201,6 +203,8 @@ var span3 = document.getElementsByClassName("close3")[0];
 var span4 = document.getElementsByClassName("close4")[0];
 var span5 = document.getElementsByClassName("close5")[0];
 var span6 = document.getElementsByClassName("close6")[0];
+var span7 = document.getElementsByClassName("close7")[0];
+
 
 // When the user clicks on the button, open the modal
 btn1.onclick = function() {
@@ -220,6 +224,9 @@ btn5.onclick = function() {
 }
 btn6.onclick = function() {
   modal6.style.display = "block";
+}
+btn7.onclick = function() {
+  modal7.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -241,6 +248,9 @@ span5.onclick = function() {
 span6.onclick = function() {
   modal6.style.display = "none";
 }
+span7.onclick = function() {
+  modal7.style.display = "none";
+}
 
 
 window.onclick = function(event) {
@@ -261,5 +271,8 @@ window.onclick = function(event) {
   }
   if (event.target == modal6) {
     modal6.style.display = "none";
+  }
+  if (event.target == modal7) {
+    modal7.style.display = "none";
   }
 }
