@@ -559,7 +559,7 @@
 
                     </div>
             </div>
-            
+
             <div id="myModal7" class="modal">
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -585,8 +585,69 @@
 
                                 <div class="col-lg-12">
                                     <div class="statistics-description">
+                                        <h2>Gradient Boosting Algorithm</h2>
+                                        <p>Gradient Boosting is a famous boosting calculation. In gradient boosting, every indicator adjusts its ancestor's mistake. Rather than Adaboost, the loads of the preparation cases are not changed, all things being equal, every indicator is prepared involving the lingering blunders of ancestor as marks.</p>
+                                        <p>There is a procedure called the Gradient Boosted Trees whose base student is CART (Classification and Regression Trees).</p>
+
+                                        <p>The beneath outline makes sense of how gradient helped trees are prepared for regression issues.</p>
+                                        <div>
+                                            <img src="assets/img/Algorithms/gb-1.png" class="img-fluid center-img" alt="Responsive image" style="width: 400px;">
+                                        </div>
+                                        <p>The troupe comprises of N trees. Tree1 is prepared utilizing the component framework X and the names y. The expectations named y1(hat) are utilized to decide the preparation set leftover mistakes r1. Tree2 is then prepared utilizing the component framework X and the lingering blunders r1 of Tree1 as marks. The anticipated outcomes r1(hat) are then used to decide the lingering r2. The cycle is rehashed until all the N trees shaping the gathering are prepared.</p>
+
+                                        <p>There is a significant boundary utilized in this procedure known as Shrinkage.</p>
+
+                                        <p>Shrinkage alludes to the way that the expectation of each tree in the group is contracted after it is increased by the learning rate (estimated time of arrival) which ranges between 0 to 1. There is a compromise among estimated time of arrival and number of assessors, diminishing learning rate should be remunerated with expanding assessors to arrive at specific model execution. Since all trees are prepared now, forecasts can be made.</p>
+                                        <p>Each tree predicts a name and last expectation is given by the formula,</p>
+                                        <pre style = "text-align: center;">y(pred) = y1 + (eta *  r1) + (eta * r2) + ....... + (eta * rN)</pre>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <h2 class="h3">Extreme Gradient Boosting (XGB) </h2>
+                                    <p>Extreme Gradient Boosting, or XGBoost for short is an efficient open-source implementation of the gradient boosting algorithm. As such, XGBoost is an algorithm, an open-source project, and a Python library.</p>
+                                    <p>It is designed to be both computationally efficient (e.g. fast to execute) and highly effective, perhaps more effective than other open-source implementations.</p>
+                                    <div>
+                                        <img src="assets/img/Algorithms/gb-2.png" class="img-fluid center-img" alt="Responsive image" style="width: 400px;">
+                                    </div>
+                                    <p>The two main reasons to use XGBoost are execution speed and model performance.</p>
+                                    <p>Generally, XGBoost is fast when compared to other implementations of gradient boosting. Szilard Pafka performed some objective benchmarks comparing the performance of XGBoost to other implementations of gradient boosting and bagged decision trees. </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End statistics Details Section -->
+
+                    </div>
+
+            </div>
+            
+            <div id="myModal8" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <!-- ======= Breadcrumbs Section ======= -->
+                    <section class="breadcrumbs">
+                        <div class="container">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="display-2"><strong>Algorithm details</strong></h2>
+                                <ol>
+                                    <li><span class="close close8">&times; &nbsp;&nbsp;&nbsp;</span></li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- Breadcrumbs Section -->
+                    
+                    <section id="statistics-details" class="statistics-details">
+                        <div class="container">
+
+                            <div class="row gy-4">
+
+                                <div class="col-lg-12">
+                                    <div class="statistics-description">
                                         <h2>AdaBoost Algorithm</h2>
-                                        <h3>Introduction</h3>
                                         <p>Boosting is an ensemble modelling technique that was first presented by Freund and Schapire in the year 1997, since then, Boosting has been a prevalent technique for tackling binary classification problems. These algorithms improve the prediction power by converting a number of weak learners to strong learners.</p>
 
                                         <p>The principle behind boosting algorithms is first we built a model on the training dataset, then a second model is built to rectify the errors present in the first model. This procedure is continued until and unless the errors are minimized, and the dataset is predicted correctly.</p>
@@ -619,6 +680,63 @@
 
             </div>
 
+            <div id="myModal9" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <!-- ======= Breadcrumbs Section ======= -->
+                    <section class="breadcrumbs">
+                        <div class="container">
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="display-2"><strong>Algorithm details</strong></h2>
+                                <ol>
+                                    <li><span class="close close9">&times; &nbsp;&nbsp;&nbsp;</span></li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- Breadcrumbs Section -->
+                    
+                    <section id="statistics-details" class="statistics-details">
+                        <div class="container">
+
+                            <div class="row gy-4">
+
+                                <div class="col-lg-12">
+                                    <div class="statistics-description">
+                                        <h2>Gaussian Naive Bayes (GNB) Algorithm</h2>
+                                        <p>The Bayes theorem provides the basis for a collection of supervised machine learning classification algorithms known as Naive Bayes. It's a simple categorization technique with a lot of power. They're useful when the inputs' dimensionality is high. The Naive Bayes Classifier can also be used to solve complex classification tasks.</p>
+                                        <h4>Bayes Theorem</h4>
+                                        <p>Conditional probability can be calculated using Bayes' Theorem. It is used in Machine Learning because it is a valuable tool in the study of probability.</p>
+                                        <div>
+                                            <img src="assets/img/Algorithms/gnb-1.jpg" class="img-fluid center-img" alt="Responsive image" style="width: 400px;">
+                                        </div>
+                                        <p>When working with continuous data, one common assumption is that the continuous values associated with each class follow a normal (or Gaussian) distribution. The features' likelihood is considered to be-</p>
+                                        <div>
+                                            <img src="assets/img/Algorithms/gnb-2.jpg" class="img-fluid center-img" alt="Responsive image" style="width: 400px;">
+                                        </div>  
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <h2 class="h3">Evaluation </h2>
+                                    <p>Gaussian Naive Bayes accepts continuous valued features and models them all as Gaussian (normal) distributions.</p>
+                                    <p>To build a simple model, assume the data is characterised by a Gaussian distribution with no covariance (independent dimensions) between the parameters. This model can be fitted by simply calculating the mean and standard deviation of the points within each label, which is all that is required to construct a distribution of this type.</p>
+                                    <div>
+                                        <img src="assets/img/Algorithms/gnb-3.jpg" class="img-fluid center-img" alt="Responsive image">
+                                    </div>
+                                    <p>A Gaussian Naive Bayes (GNB) classifier works as shown in the diagram above. The z-score distance between each data point and each class mean is determined, which is the distance from the class mean divided by the class standard deviation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- End statistics Details Section -->
+
+                    </div>
+
+            </div>
+
+
         </section>
 
         <!-- ======= algorithms Section ======= -->
@@ -638,8 +756,7 @@
                                 <div class="icon"><i class="bx bx-shape-triangle"></i></div>
                                 <h4>Neural Network</a>
                             </h4>
-                            <p>Neural Network is a movement of calculations that are endeavoring to copy the human frontal cortex and find the association between the courses of action of data. It is being used in various use-cases like in relapse, grouping,
-                                Image Recognition and some more.</p>
+                            <p>Neural Network is a movement of calculations that are endeavoring to copy the human frontal cortex and find the association between the courses of action of data.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
@@ -657,7 +774,7 @@
                                 <div class="icon"><i class="bx bxs-analyse"></i></div>
                                 <h4>Random Forest Models</a>
                             </h4>
-                            <p>An arbitrary backwoods is an AI method that is utilized to tackle relapse and order issues. It uses gathering realizing, which is a procedure that consolidates numerous classifiers to give answers for complex problems</p>
+                            <p>Random Forest is an artificial intelligence (AI) technique for dealing with relapse and order issues.</p>
                         </div>
                     </div>
 
@@ -669,8 +786,7 @@
                                 <div class="icon"><i class="bx bx-hive"></i></div>
                                 <h4>Decision Tree</a>
                             </h4>
-                            <p>It is a non-parametric administered learning technique utilized for characterization and relapse. The objective is to make a model that predicts the worth of an objective variable by taking in straightforward choice principles
-                                surmised from the information highlights.</p>
+                            <p>It is a non-parametric administered learning technique utilized for characterization and relapse.</p>
                         </div>
                     </div>
 
@@ -690,17 +806,38 @@
                                 <div class="icon"><i class="bx bx-analyse"></i></div>
                                 <h4>Logistic Regression</a>
                             </h4>
-                            <p>Calculated relapse is a course of demonstrating the likelihood of a discrete result given an information variable. The most widely recognized result that can take two qualities like valid/bogus, yes/no, etc.</p>
+                            <p>The method of modelling the probability of a discrete result given an input variable is known as logistic regression.</p>
                         </div>
                     </div>
-
+                    
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box" id="myBtn7">
                             <a href="#algorithms">
                                 <div class="icon"><i class="bx bxs-analyse"></i></div>
+                                <h4>Gradient Boosting (and XGB) Algorithm</a>
+                            </h4>
+                            <p>The gradient boosting approach can be used to forecast not just continuous target variables but also categorical target variables(as a Classifier).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box" id="myBtn8">
+                            <a href="#algorithms">
+                                <div class="icon"><i class="bx bxs-analyse"></i></div>
                                 <h4>AdaBoost Algorithm</a>
                             </h4>
-                            <p>AdaBoost also called Adaptive Boosting is a technique in Machine Learning used as an Ensemble Method</p>
+                            <p>AdaBoost also called Adaptive Boosting is a technique in Machine Learning used as an Ensemble Method.</p>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box" id="myBtn9">
+                            <a href="#algorithms">
+                                <div class="icon"><i class="bx bxs-analyse"></i></div>
+                                <h4>Gaussian Naive Bayes (GNB) Algorithm</a>
+                            </h4>
+                            <p>Nave Bayes is a probabilistic machine learning technique based on the Bayes theorem that is utilised for numerous classification functions.</p>
                         </div>
                     </div>
 
