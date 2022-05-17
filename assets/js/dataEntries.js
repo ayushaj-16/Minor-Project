@@ -2,7 +2,7 @@ $( document).ready(function() {
   
 $.ajax({
   type: "GET",
-  url: "DataExportedNew.csv",
+  url: "DataExportedOldData.csv",
   dataType: "text",
   success: function (data) {
     processDataAsObj(data);
@@ -12,7 +12,7 @@ $.ajax({
 $('#btn1').click(()=> {  
   $.ajax({
     type: "GET",
-    url: "DataExportedNew.csv",
+    url: "DataExportedOldData.csv",
     dataType: "text",
     success: function (data) {
       processDataAsObj(data);
@@ -23,7 +23,7 @@ $('#btn1').click(()=> {
 $('#btn2').click(()=> {  
   $.ajax({
     type: "GET",
-    url: "DataExportedOldData.csv",
+    url: "DataExportedNew.csv",
     dataType: "text",
     success: function (data) {
       processDataAsObj(data);
@@ -121,7 +121,6 @@ function drawOutputAsObj(lines) {
 var tem;
 
 function drawCharts(lines) {
-  
   const labels = [];
   const data = {
     labels: labels,
@@ -172,7 +171,13 @@ function drawCharts(lines) {
   for (var i = 0; i < lines.length-1; i++) {
     labels.push(lines[i]["Model Name"]);
   }
-  
+  for(let i=1; i<7; i++) {
+    let chartStatus = Chart.getChart("myChart" + `${i}`);
+    if (chartStatus != undefined) {
+      chartStatus.destroy();
+    }
+ }
+
   // for accuracy
   data['datasets'][0]['label'] = "Accuracy";
   data['datasets'][0]['backgroundColor'] = "rgba(231, 76, 60, 0.5)";
