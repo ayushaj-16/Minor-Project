@@ -112,7 +112,7 @@
 
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                         <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                            <a href="https://github.com/MrArthor/Minor-Project-Semester-V/blob/main/DataSet/fraudTrain.csv" target="_blank">
+                            <a href="https://drive.google.com/drive/folders/1cfSMyaBdzblEoDBzY_Q70z-6RrG55gj3" target="_blank">
                                 <div class="icon"><i class="bx bxs-data"></i></div>
                                 <h4 class="title">Know our Dataset</a>
                             </h4>
@@ -813,7 +813,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box" id="myBtn7">
                             <a href="#algorithms">
-                                <div class="icon"><i class="bx bxs-analyse"></i></div>
+                                <div class="icon"><i class="bx bx-shape-triangle"></i></div>
                                 <h4>Gradient Boosting (and XGB) Algorithm</a>
                             </h4>
                             <p>The gradient boosting approach can be used to forecast not just continuous target variables but also categorical target variables(as a Classifier).</p>
@@ -834,7 +834,7 @@
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box" id="myBtn9">
                             <a href="#algorithms">
-                                <div class="icon"><i class="bx bxs-analyse"></i></div>
+                                <div class="icon"><i class="bx bx-shape-square"></i></div>
                                 <h4>Gaussian Naive Bayes (GNB) Algorithm</a>
                             </h4>
                             <p>Nave Bayes is a probabilistic machine learning technique based on the Bayes theorem that is utilised for numerous classification functions.</p>
@@ -854,296 +854,1302 @@
                 <div class="section-title">
                     <h2>Statistics</h2>
                     <h3>Check <span> Statistical Analysis</span></h3>
-                    <p>These Algorithms are compared on the basis of their accuracy, precision, recall, and F1-score</p>
+                    <p>These Algorithms are compared on the basis of their accuracy, precision, recall, F1-score, Sensitivity, and Specificity.</p>
                 </div>
-
-                <div class="row" data-aos="fade-up" data-aos-delay="100">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="statistics-flters">
-                            <li data-filter="*" class="filter-active">All Parameters</li>
-                            <li id="o1" data-filter=".filter-presion">Precision</li>
-                            <li id="o2" data-filter=".filter-recall">Recall</li>
-                            <li id="o3" data-filter=".filter-f1score">F1 Score</li>
-                            <li id="o4" data-filter=".filter-accuracy">Accuracy</li>
-                        </ul>
-                    </div>
+                <div class="row justify-content-around my-5" id="datatoggler">
+                    <span class="col-3"></span>
+                    <span class="col-3" >
+                        <button type="button" class="btn btn-warning" id="btn1">Load Results for Dataset 1 </button>                    
+                    </span>
+                    <span class="col-3" >
+                        <button type="button" class="btn btn-info" id="btn2">Load Results for Dataset 2 </button>
+                    </span>
+                    <span class="col-3"></span>
                 </div>
-
-                <div class="row statistics-container" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="statistics-item filter-accuracy">
-
-                        <div id="skills" class="skills mb-5">
-                            <div class="container" data-aos="fade-up">
-                                <div class="row mb-3">
-                                    <h2>Accuracy Score</h2>
-                                </div>
-
-                                <div class="row skills-content">
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="ac10">HTML <i class="val">100%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac11"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="ac20">CSS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac21"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="ac30">JavaScript <i class="val">75%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac31"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="ac40">PHP <i class="val">80%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="ac41"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="ac50">WordPress/CMS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac51"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="ac60">Photoshop <i class="val">55%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" id="ac61"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="charts">
-                            <canvas id="myChart1"></canvas>
-                        </div>
-                    </div>
-                    <div class="statistics-item filter-presion">
-
-                        <div id="skills" class="skills mb-5">
-                            <div class="container" data-aos="fade-up">
-                                <div class="row mb-3">
-                                    <h2>Precision Score</h2>
-                                </div>
-
-                                <div class="row skills-content">
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="pc10">HTML <i class="val">100%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc11"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="pc20">CSS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc21"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="pc30">JavaScript <i class="val">75%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc31"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="pc40">PHP <i class="val">80%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="pc41"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="pc50">WordPress/CMS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc51"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="pc60">Photoshop <i class="val">55%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" id="pc61"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="charts">
-                            <canvas id="myChart2"></canvas>
-                        </div>
-                    </div>
-                    <div class="statistics-item filter-recall">
-
-                        <div id="skills" class="skills mb-5">
-                            <div class="container" data-aos="fade-up">
-                                <div class="row mb-3">
-                                    <h2>Recall Score </h2>
-                                </div>
-
-                                <div class="row skills-content">
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="rc10">HTML <i class="val">100%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc11"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="rc20">CSS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc21"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="rc30">JavaScript <i class="val">75%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc31"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="rc40">PHP <i class="val">80%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="rc41"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="rc50">WordPress/CMS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc51"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="rc60">Photoshop <i class="val">55%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" id="rc61"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="charts">
-                            <canvas id="myChart3"></canvas>
-                        </div>
-                    </div>
-                    <div class="statistics-item filter-f1score">
-
-                        <div id="skills" class="skills mb-5">
-                            <div class="container" data-aos="fade-up">
-                                <div class="row mb-3">
-                                    <h2>F1 Score</h2>
-                                </div>
-
-                                <div class="row skills-content">
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="fc10">HTML <i class="val">100%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc11"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="fc20">CSS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc21"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="fc30">JavaScript <i class="val">75%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc31"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-lg-6">
-
-                                        <div class="progress">
-                                            <span class="skill" id="fc40">PHP <i class="val">80%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" id="fc41"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="fc50">WordPress/CMS <i class="val">90%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc51"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="progress">
-                                            <span class="skill" id="fc60">Photoshop <i class="val">55%</i></span>
-                                            <div class="progress-bar-wrap">
-                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" id="fc61"></div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="charts">
-                            <canvas id="myChart4"></canvas>
+                <div id="content">
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="statistics-flters">
+                                <li data-filter="*" class="filter-active">All Parameters</li>
+                                <li id="o1" data-filter=".filter-presion">Precision</li>
+                                <li id="o2" data-filter=".filter-recall">Recall</li>
+                                <li id="o3" data-filter=".filter-f1score">F1 Score</li>
+                                <li id="o4" data-filter=".filter-accuracy">Accuracy</li>
+                                <li id="o5" data-filter=".filter-senstivity">Sensitivity</li>
+                                <li id="o6" data-filter=".filter-specificity">Specificity</li>
+                            </ul>
                         </div>
                     </div>
 
+                    <div class="row statistics-container temp" data-aos="fade-up" data-aos-delay="200">
+
+                        <div class="statistics-item filter-accuracy">
+
+                            <div id="skills" class="skills mb-5">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="row mb-3">
+                                        <h2>Accuracy Score</h2>
+                                    </div>
+
+                                    <div class="row skills-content">
+
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac10">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac11"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac20">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac21"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac30">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac31"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac40">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac41"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac50">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac51"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac60">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac61"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac70">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac71"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac80">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac81"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac90">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac91"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac100">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac101"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac110">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac111"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac120">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac121"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="ac130">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac131"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac140">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac141"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac150">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac151"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac160">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac161"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac170">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac171"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac180">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac181"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac190">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac191"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac200">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac201"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac210">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac211"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac220">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac221"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac230">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="ac231"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac240">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="ac241"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="ac250">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac251"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="ac260">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="ac261"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <canvas id="myChart1"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="statistics-item filter-presion">
+
+                            <div id="skills" class="skills mb-5">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="row mb-3">
+                                        <h2>Precision Score</h2>
+                                    </div>
+
+                                    <div class="row skills-content">
+
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc10">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc11"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc20">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc21"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc30">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc31"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc40">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc41"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc50">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc51"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc60">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc61"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc70">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc71"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc80">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc81"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc90">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc91"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc100">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc101"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc110">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc111"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc120">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc121"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="pc130">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc131"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc140">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc141"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc150">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc151"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc160">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc161"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc170">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc171"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc180">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc181"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc190">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc191"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc200">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc201"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc210">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc211"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc220">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc221"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc230">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="pc231"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc240">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="pc241"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="pc250">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc251"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="pc260">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="pc261"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <canvas id="myChart2"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="statistics-item filter-recall">
+
+                            <div id="skills" class="skills mb-5">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="row mb-3">
+                                        <h2>Recall Score </h2>
+                                    </div>
+
+                                    <div class="row skills-content">
+
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc10">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc11"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc20">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc21"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc30">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc31"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc40">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc41"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc50">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc51"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc60">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc61"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc70">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc71"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc80">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc81"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc90">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc91"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc100">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc101"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc110">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc111"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc120">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc121"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="rc130">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc131"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc140">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc141"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc150">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc151"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc160">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc161"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc170">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc171"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc180">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc181"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc190">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc191"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc200">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc201"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc210">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc211"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc220">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc221"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc230">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="rc231"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc240">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="rc241"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="rc250">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc251"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="rc260">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="rc261"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <canvas id="myChart3"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="statistics-item filter-f1score">
+
+                            <div id="skills" class="skills mb-5">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="row mb-3">
+                                        <h2>F1 Score</h2>
+                                    </div>
+
+                                    <div class="row skills-content">
+
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc10">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc11"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc20">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc21"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc30">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc31"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc40">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc41"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc50">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc51"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc60">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc61"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc70">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc71"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc80">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc81"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc90">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc91"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc100">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc101"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc110">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc111"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc120">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc121"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="fc130">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc131"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc140">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc141"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc150">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc151"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc160">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc161"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc170">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc171"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc180">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc181"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc190">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc191"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc200">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc201"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc210">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc211"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc220">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc221"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc230">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="fc231"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc240">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="fc241"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="fc250">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc251"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="fc260">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="fc261"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <canvas id="myChart4"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="statistics-item filter-senstivity">
+
+                            <div id="skills" class="skills mb-5">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="row mb-3">
+                                        <h2>Senstivity</h2>
+                                    </div>
+
+                                    <div class="row skills-content">
+
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc10">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc11"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc20">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc21"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc30">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc31"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc40">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc41"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc50">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc51"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc60">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc61"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc70">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc71"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc80">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc81"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc90">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc91"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc100">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc101"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc110">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc111"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc120">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc121"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="sc130">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc131"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc140">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc141"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc150">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc151"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc160">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc161"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc170">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc171"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc180">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc181"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc190">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc191"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc200">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc201"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc210">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc211"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc220">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc221"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc230">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="sc231"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc240">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="sc241"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="sc250">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc251"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="sc260">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="sc261"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <canvas id="myChart5"></canvas>
+                            </div>
+                        </div>
+
+                        <div class="statistics-item filter-specificity">
+
+                            <div id="skills" class="skills mb-5">
+                                <div class="container" data-aos="fade-up">
+                                    <div class="row mb-3">
+                                        <h2>Specificity</h2>
+                                    </div>
+
+                                    <div class="row skills-content">
+
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc10">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc11"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc20">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc21"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc30">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc31"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc40">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc41"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc50">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc51"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc60">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc61"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc70">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc71"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc80">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc81"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc90">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc91"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc100">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc101"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc110">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc111"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc120">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc121"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="spc130">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc131"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="col-lg-6">
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc140">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc141"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc150">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc151"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc160">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc161"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc170">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc171"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc180">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc181"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc190">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc191"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc200">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc201"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc210">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc211"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc220">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc221"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc230">HTML <i class="val">100%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" id="spc231"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc240">CSS <i class="val">90%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" id="spc241"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="progress">
+                                                <span class="skill" id="spc250">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc251"></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="progress">
+                                                <span class="skill" id="spc260">JavaScript <i class="val">75%</i></span>
+                                                <div class="progress-bar-wrap">
+                                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="spc261"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="charts">
+                                <canvas id="myChart6"></canvas>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>

@@ -1,11 +1,36 @@
+$( document).ready(function() {
+  
 $.ajax({
   type: "GET",
-  url: "DataExported.csv",
+  url: "DataExportedNew.csv",
   dataType: "text",
   success: function (data) {
     processDataAsObj(data);
   },
 });
+
+$('#btn1').click(()=> {  
+  $.ajax({
+    type: "GET",
+    url: "DataExportedNew.csv",
+    dataType: "text",
+    success: function (data) {
+      processDataAsObj(data);
+    },
+  });
+});
+
+$('#btn2').click(()=> {  
+  $.ajax({
+    type: "GET",
+    url: "DataExportedOldData.csv",
+    dataType: "text",
+    success: function (data) {
+      processDataAsObj(data);
+    },
+  });
+});
+
 
 //if your csv file contains the column names as the first line
 function processDataAsObj(csv) {
@@ -23,11 +48,13 @@ function processDataAsObj(csv) {
     }
     lines.push(obj);
   }
+  
   drawOutputAsObj(lines);
 }
 
 //draw the table, if first line contains heading
 function drawOutputAsObj(lines) {
+  
   //the data
   for (var i = 0; i < lines.length - 1; i++) {
     // Setting Accuracy for side bar graph
@@ -38,7 +65,7 @@ function drawOutputAsObj(lines) {
     document
       .getElementById(`ac${i + 1}1`)
       .setAttribute("aria-valuenow", parseInt(accuracy));
-
+    
     // Setting precision for side bar graph
     let precision = parseFloat(
       parseFloat(lines[i]["Precision Score"]) * 100
@@ -69,6 +96,24 @@ function drawOutputAsObj(lines) {
     document
       .getElementById(`fc${i + 1}1`)
       .setAttribute("aria-valuenow", parseInt(f1score));
+    
+    // Setting sensitivity for side bar graph
+    let senstivity = parseFloat(parseFloat(lines[i]["Sensitivity"]) * 100).toFixed(2);
+    document.getElementById(
+      `sc${i + 1}0`
+    ).innerHTML = `${lines[i]["Model Name"]}<i class="val">${senstivity}%</i>`;
+    document
+      .getElementById(`sc${i + 1}1`)
+      .setAttribute("aria-valuenow", parseInt(senstivity));
+    
+    // Setting Specificity for side bar graph
+    let specificity = parseFloat(parseFloat(lines[i]["Specificity"]) * 100).toFixed(2);
+    document.getElementById(
+      `spc${i + 1}0`
+    ).innerHTML = `${lines[i]["Model Name"]}<i class="val">${specificity}%</i>`;
+    document
+      .getElementById(`spc${i + 1}1`)
+      .setAttribute("aria-valuenow", parseInt(specificity));
   }
   drawCharts(lines);
 }
@@ -111,7 +156,7 @@ function drawCharts(lines) {
       },
       scales: {
         y: {
-          min: 0.76,
+          min: 0.70,
           ticks: {
               stepSize: 0.01
           },
@@ -175,7 +220,28 @@ function drawCharts(lines) {
     document.getElementById('myChart4'),
     config
   );
-
+ 
+  // for sensitivity 
+  data['datasets'][0]['label'] = "Sensitivity";
+  for (var i = 0; i < lines.length-1; i++) {
+    data["datasets"][0]["data"][i] =parseFloat(lines[i]["Sensitivity"]);
+  }
+  tem = data;
+  const myChart5 = new Chart(
+    document.getElementById('myChart5'),
+    config
+  );
+  
+  // for specificity 
+  data['datasets'][0]['label'] = "Specificity";
+  for (var i = 0; i < lines.length-1; i++) {
+    data["datasets"][0]["data"][i] =parseFloat(lines[i]["Specificity"]);
+  }
+  tem = data;
+  const myChart6 = new Chart(
+    document.getElementById('myChart6'),
+    config
+  );
 }
 
 // Get the modal
@@ -300,3 +366,4 @@ window.onclick = function(event) {
     modal9.style.display = "none";
   }
 }
+});
